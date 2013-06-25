@@ -441,7 +441,7 @@ void del_zero ( char * a, char * b )
                 b[strlen(b)-1]='\0';   //Удаляем ставший лишним разряд в конце числа
         }
 }
-
+/*
 char *randomstr(char *bound)
 {
         int k = strlen(bound), n = rand()%k + 1;
@@ -458,6 +458,7 @@ char *randomstr(char *bound)
                 {
                         int a = rand()%10;
                         itoa(a,character,10);
+
                         strcat(randstr,character);
                 }
                 strcpy(buf,randstr);
@@ -473,7 +474,7 @@ char *randomstr(char *bound)
                 }
         }
 }
-
+*/
 int poW ( char *t, char *k, char *res )
 {
         char *buf1 = new char [N];
@@ -554,7 +555,7 @@ int cmp(char *a, char *b)
         }
         return 2;
 }
-
+/*
 int RobinTest(char *n)
 {
         char *buf, *buf1, *buf2, *s, *r, *j, *nn, *a, *y;
@@ -613,7 +614,7 @@ int RobinTest(char *n)
                         return 0;
         }
         return 1;
-}
+}*/
 
 //Вычисление НОД по алгоритму Евклида
 int NOD ( char * a, char * b, char * res )

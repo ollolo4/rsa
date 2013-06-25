@@ -150,19 +150,19 @@ bool isPrimitive( superlong & a ) {
     }
     prime_numbers.close();
 
-    // Тест Робина-Миллера
-    a.give( str );
-    int test;
-    char *n = new char [N];
-    strcpy( n, str.c_str() );
-    for ( unsigned int i = 0 ; i < 5 ; i++ ) {
-        test = RobinTest( n );
-        if ( !test ) {
-            free( n );
-            return 0;
-        }
-    }
-    free( n );
+//    // Тест Робина-Миллера
+//    a.give( str );
+//    int test;
+//    char *n = new char [N];
+//    strcpy( n, str.c_str() );
+//    for ( unsigned int i = 0 ; i < 5 ; i++ ) {
+//        test = RobinTest( n );
+//        if ( !test ) {
+//            free( n );
+//            return 0;
+//        }
+//    }
+//    free( n );
     return 1;
 }
 
