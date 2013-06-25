@@ -11,8 +11,13 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    math.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    template_functions.h \
+    superlong.h \
+    functions.h \
+    crypto_functions.h
 
 FORMS    += mainwindow.ui

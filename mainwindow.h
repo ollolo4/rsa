@@ -18,6 +18,18 @@ public:
 private:
     Ui::MainWindow *ui;
     void display();
+
+private slots:
+    void openfil1();
+    void openfil2();
+    void checkP();
+    void checkQ();
+    void gen_p();
+    void gen_q();
+    void checke();
+    void checkd();
+    void to();
+    void from();
 };
 
 #endif // MAINWINDOW_H

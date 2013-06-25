@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Thu 13. Jun 06:18:38 2013
+** Created: Tue 25. Jun 09:14:08 2013
 **      by: Qt User Interface Compiler version 4.8.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -44,6 +44,10 @@ public:
     QPushButton *pushfrom;
     QLabel *n_q;
     QPushButton *gen_q;
+    QLabel *label_e;
+    QLineEdit *linee;
+    QLabel *label_d;
+    QLineEdit *lined;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -52,7 +56,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(629, 342);
+        MainWindow->resize(629, 384);
         QPalette palette;
         QBrush brush(QColor(255, 255, 255, 255));
         brush.setStyle(Qt::SolidPattern);
@@ -105,16 +109,30 @@ public:
         label_q->setFont(font);
         pushto = new QPushButton(centralWidget);
         pushto->setObjectName(QString::fromUtf8("pushto"));
-        pushto->setGeometry(QRect(40, 220, 111, 31));
+        pushto->setGeometry(QRect(40, 280, 111, 31));
         pushfrom = new QPushButton(centralWidget);
         pushfrom->setObjectName(QString::fromUtf8("pushfrom"));
-        pushfrom->setGeometry(QRect(170, 220, 111, 31));
+        pushfrom->setGeometry(QRect(170, 280, 111, 31));
         n_q = new QLabel(centralWidget);
         n_q->setObjectName(QString::fromUtf8("n_q"));
         n_q->setGeometry(QRect(490, 150, 61, 21));
         gen_q = new QPushButton(centralWidget);
         gen_q->setObjectName(QString::fromUtf8("gen_q"));
         gen_q->setGeometry(QRect(20, 150, 101, 21));
+        label_e = new QLabel(centralWidget);
+        label_e->setObjectName(QString::fromUtf8("label_e"));
+        label_e->setGeometry(QRect(130, 190, 61, 21));
+        label_e->setFont(font);
+        linee = new QLineEdit(centralWidget);
+        linee->setObjectName(QString::fromUtf8("linee"));
+        linee->setGeometry(QRect(200, 190, 271, 20));
+        label_d = new QLabel(centralWidget);
+        label_d->setObjectName(QString::fromUtf8("label_d"));
+        label_d->setGeometry(QRect(130, 220, 61, 21));
+        label_d->setFont(font);
+        lined = new QLineEdit(centralWidget);
+        lined->setObjectName(QString::fromUtf8("lined"));
+        lined->setGeometry(QRect(200, 220, 271, 20));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
@@ -145,6 +163,8 @@ public:
         pushfrom->setText(QApplication::translate("MainWindow", "\320\240\320\260\321\201\321\210\320\270\321\204\321\200\320\276\320\262\320\260\321\202\321\214", 0, QApplication::UnicodeUTF8));
         n_q->setText(QApplication::translate("MainWindow", "\320\235\320\265 \320\277\321\200\320\276\321\201\321\202\320\276\320\265 ", 0, QApplication::UnicodeUTF8));
         gen_q->setText(QApplication::translate("MainWindow", "\320\241\320\263\320\265\320\275\320\265\321\200\320\270\321\200\320\276\320\262\320\260\321\202\321\214 q", 0, QApplication::UnicodeUTF8));
+        label_e->setText(QApplication::translate("MainWindow", "\320\222\320\262\320\265\320\264\320\270\321\202\320\265 e", 0, QApplication::UnicodeUTF8));
+        label_d->setText(QApplication::translate("MainWindow", "\320\222\320\262\320\265\320\264\320\270\321\202\320\265 d", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };
