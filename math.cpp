@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <conio.h>
 #include <ctype.h>
 #include <string.h>
 #include <stdlib.h>
@@ -19,6 +18,8 @@ char *randomstr(char *bound);
 void del_zero ( char * a, char * b );
 int NOD( char * ,char * , char * );
 int NOD_rash ( char * a, char * b, char * d, char * x, char * y );
+
+char *strrev (char *string){ register char *p = string; register char *q; if (*(q = p)) /* non-empty string? */ { while (*++q) ; while (--q > p) { register char c; c = *q; *q = *p; *p++ = c; } } return string;}
 
 int add ( char *aa, char *bb, char * res )
 {
